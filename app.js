@@ -26,7 +26,7 @@ handTrack.startVideo(video)
         if (status) {
             navigator.getUserMedia({ video: {} }, stream => {
                 video.srcObject = stream;
-                setInterval(runDetection, 2000);
+                setInterval(runDetection, 500);
             },
                 err => console.log(err)
             )
